@@ -15,7 +15,7 @@
       <p class="title">{{i.picName}}</p>
       <p class="imgDesc">{{i.picDesc}}</p>
       <button class="accept" (click)="approve(i)">Approve</button>
-      <button class="decline" (click)="decline()">Decline</button>
+      <button class="decline" (click)="decline(i.key)">Decline</button>
     </div>
   </div>
 </body>
