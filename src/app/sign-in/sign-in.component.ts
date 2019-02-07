@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'
+declare var firebase;
 
 
 @Component({
@@ -11,7 +12,7 @@ export class SignInComponent implements OnInit {
   email;
   password;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
