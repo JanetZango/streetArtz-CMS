@@ -1,23 +1,21 @@
 <head>
 
 </head>
-<body>
-  <div class="container">
-    <div class="desc">
 
+<body>
+  <div class="container" *ngFor="let i of allPending">
+    <div class="desc">
     </div>
     <div class="userDetails">
-      <img src="../../assets/imgs/Capture.PNG" alt="" class="dp">
-      <p class="username">John Doe</p>
-      <p class="mail">j.doe@gmail.com</p>
+      <img src="{{i.userPic}}" alt="" class="dp">
+      <p class="username">{{i.name}}</p>
+      <p class="mail">{{i.email}}</p>
       <br>
-      <img src="../../assets/imgs/Capture.PNG" class="imgUpl" alt="">
-      <p class="title">Image Title</p>
-      <p class="imgDesc">Image Description : L
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repudiandae deleniti fugiat, sunt earum error nam, quibusdam quas ipsa est id? Perspiciatis, error eaque blanditiis vel id voluptate doloribus sint!
-      </p>
-      <button class="accept">Approve</button>
-      <button class="decline">Decline</button>
+      <img src="{{i.picUrl}}" class=" imgUpl" alt="">
+      <p class="title">{{i.picName}}</p>
+      <p class="imgDesc">{{i.picDesc}}</p>
+      <button class="accept" (click)="approve(i)">Approve</button>
+      <button class="decline" (click)="decline()">Decline</button>
     </div>
   </div>
 </body>
