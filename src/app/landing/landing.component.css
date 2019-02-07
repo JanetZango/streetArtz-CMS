@@ -29,16 +29,17 @@ body{
     height: 85%;
     border: .5px solid rgba(128, 128, 128, 0.164);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 70px;
+    top: -80px;
     transform: translateX(-50%);
     background: white;
+    overflow: none;
     /* padding: 10px; */
 }
 .header{
     height: 82px;
-    background:  whitesmoke;
+    background:  rgb(201, 201, 201);
     margin: 0 auto;
     width: 100.05%;
     margin-top: -1px;
@@ -52,4 +53,7 @@ body{
 }
 .content{
     padding: 15px;
+    overflow-y: scroll;
+    height: 87%;
+    position: relative;
 }
