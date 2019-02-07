@@ -1,21 +1,28 @@
 <head>
-
+  <link rel="stylesheet" href="/path/to/material-icons/iconfont/material-icons.css">
 </head>
 
 <body>
-  <div class="container" *ngFor="let i of allPending">
-    <div class="desc">
+  <div class="desc">
+    <h2>StreetArtz Content Management System</h2>
+  </div>
+  <div class="container">
+    <div class="header">
+      Pending Uploads
     </div>
-    <div class="userDetails">
-      <img src="{{i.userPic}}" alt="" class="dp">
-      <p class="username">{{i.name}}</p>
-      <p class="mail">{{i.email}}</p>
-      <br>
-      <img src="{{i.picUrl}}" class=" imgUpl" alt="">
-      <p class="title">{{i.picName}}</p>
-      <p class="imgDesc">{{i.picDesc}}</p>
-      <button class="accept" (click)="approve(i)">Approve</button>
-      <button class="decline" (click)="decline(i.key)">Decline</button>
+    <div class="content">
+      <div class="userDetails" *ngFor="let i of allPending">
+        <img src="{{i.userPic}}" alt="" class="dp">
+        <p class="username">{{i.name}}</p>
+        <p class="mail">{{i.email}}</p>
+        <br>
+        <img src="{{i.picUrl}}" class="imgUpl" alt="">
+        <p class="title">{{i.picName}}</p>
+        <p class="imgDesc">{{i.picDesc}}
+        </p>
+        <button class="accept" (click)="approve(i)">Approve</button>
+        <button class="decline" (click)="decline(i.key)">Decline</button>
+      </div>
     </div>
   </div>
 </body>
