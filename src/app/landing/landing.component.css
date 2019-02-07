@@ -6,3 +6,50 @@
 .imgUpl{
     height: 250px;
 }
+body{
+    background: whitesmoke;
+    width: 101vw;
+    height: 101vh;
+    margin: -10px;
+    position: fixed;
+    overflow: hidden;
+}
+.desc{
+    background: rgb(1,17,39);
+    padding: 1px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+.container{
+    width: 80%;
+    height: 85%;
+    border: .5px solid rgba(128, 128, 128, 0.164);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    background: white;
+    /* padding: 10px; */
+}
+.header{
+    height: 82px;
+    background:  whitesmoke;
+    margin: 0 auto;
+    width: 100.05%;
+    margin-top: -1px;
+    text-align: center;
+    line-height: 82px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    /* border-bottom: 1px solid grey; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
+}
+.content{
+    padding: 15px;
+}
