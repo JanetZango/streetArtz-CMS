@@ -1,14 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>StreetArtzCMS</title>
   <base href="/">
 
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAxsIX8mrI7nFs-Shij7vjfXEgm-snp9fc",
+      authDomain: "streetarts2019latestbyderik.firebaseapp.com",
+      databaseURL: "https://streetarts2019latestbyderik.firebaseio.com",
+      projectId: "streetarts2019latestbyderik",
+      storageBucket: "streetarts2019latestbyderik.appspot.com",
+      messagingSenderId: "60147583000"
+    };
+    firebase.initializeApp(config);
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
